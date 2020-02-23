@@ -1,0 +1,67 @@
+@import 'http://weloveiconfonts.com/api/?family=fontawesome';
+
+
+* {
+    box-sizing: border-box;
+    --blur: blur(13px);
+}
+body {
+    height: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+html, #root, #background-image{
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+#background-image{
+    text-align: center;
+    z-index: 1; 
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-filter: var(--blur);
+    -moz-filter: var(--blur);
+    filter: var(--blur);
+}
+
+#container {
+    z-index: 2;
+    position: absolute;
+}
+
+#card{
+    background-color: #a6caf0;
+}
+
+.rain {
+    background: url('./assets/rain.gif') no-repeat;
+    background-size: cover;
+}
+.clear {
+    background: url('./assets/clear.gif') no-repeat;
+    background-size: cover;
+}
+.snow {
+    background: url('./assets/snow.gif') no-repeat;
+    background-size: cover;
+}
+.clouds {
+    background: url('./assets/clouds.gif') no-repeat;
+    background-size: cover;
+}
